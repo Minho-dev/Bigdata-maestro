@@ -59,4 +59,14 @@ def my_avg(a):
     return count / my_len(a)
 
 print(my_avg(a))
-print(my_avg((3,4)))
+
+
+def my_join(str, ch):
+    result = ''
+    for i in range(my_len(str)):
+        result = result + str[i] + ch
+    return result
+
+
+a = 'abcdefghijklmn'
+print(my_join(a, ':'))
